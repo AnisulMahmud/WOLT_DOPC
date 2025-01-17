@@ -1,59 +1,72 @@
-/* Container styling */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('../assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+
 .calculator-container {
-    width: 400px;
-    margin: 40px auto;
-    padding: 20px;
-    border: 2px solid #000;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Headings */
-  h2, h3 {
-    text-align: center;
-    margin-bottom: 15px;
-    font-weight: bold;
-  }
-  
-  /* Form section */
-  .form-section label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  
-  .form-section input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .form-section button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 15px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .form-section button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Breakdown section */
-  .breakdown-section {
-    margin-top: 20px;
-    padding-top: 10px;
-    border-top: 1px solid #ccc;
-  }
-  
-  .breakdown-section p {
-    margin: 5px 0;
-  }
-  
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  text-align: center;
+}
+
+
+.form-section label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.form-section input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.form-section button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-section button:hover {
+  background-color: #0056b3;
+}
